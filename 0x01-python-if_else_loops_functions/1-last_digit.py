@@ -9,7 +9,8 @@ if number >= 0:
     elif lasDig == 0:
         print(f"Last digit of {number} is {lasDig} and is 0")
     elif lasDig < 6 and lasDig != 0:
-        print(f"Last digit of {number} is {lasDig} and is less than 6 and not 0")
+        print(f"Last digit of {number} is {lasDig} and is less than 6 and not\
+                0")
 if number < 0:
     lasDig = -1 * lasDig
     print(f"Last digit of {number} is {lasDig} and is less than 6 and not 0")
