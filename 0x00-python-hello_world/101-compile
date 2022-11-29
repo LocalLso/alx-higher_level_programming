@@ -1,0 +1,3 @@
+#!/usr/bin/python3
+import compileall
+compileall.compile_file('main.py')
