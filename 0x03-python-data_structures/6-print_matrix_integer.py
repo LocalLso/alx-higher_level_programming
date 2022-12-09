@@ -6,5 +6,5 @@ def print_matrix_integer(matrix=[[]]):
     for i in range(0, n):
         m[i]
         for j in m[i]:
-            print("{:d}".format(j), end ="" if j != m[i][-1] else "")
+            print("{:d}".format(j), end="" if j != m[i][-1] else "")
         print()
