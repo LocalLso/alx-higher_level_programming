@@ -4,7 +4,8 @@
 
 class Rectangle:
     """ This class represents a class rectangle. """
-    def __init__(self, width=0, height= 0):
+
+    def __init__(self, width=0, height=0):
         """ This intance method initializes class instances. """
         self.width = width
         self.height = height
