@@ -7,7 +7,7 @@ import MySQLdb
 if __name__ == "__main__":
     db = MySQLbd.connect(user=sys.argv[1], passwd=sys.argv[2], db=sys.argv[3])
     cur = db.cursor()
-    sqlQ = "SELECT * FROM `states` WHERE `name` = {}", % format(sys.argv[4])
+    sqlQ = "SELECT * FROM `states` WHERE `name` = '{}'".format(sys.argv[4])
     cur.execute(sqlQ)
     results = cur.fetchall()
     for result in results:
