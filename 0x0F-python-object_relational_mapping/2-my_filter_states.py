@@ -9,6 +9,4 @@ if __name__ == "__main__":
     cur = db.cursor()
     cur.execute("SELECT * FROM `states` \
             WHERE BINARY `name` = '{}'".format(sys.argv[4]))
-    results = cur.fetchall()
-    for result in results:
-        print(result)
+    [print(result) for result in cur.fetchall()]
