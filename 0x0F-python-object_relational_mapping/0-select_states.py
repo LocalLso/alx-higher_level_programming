@@ -9,4 +9,4 @@ if __name__ == "__main__":
     cur.execute("SELECT * FROM `states`")
     results = cur.fetchall()
     for result in results:
-        [print(state)]
+        [print(result)]
