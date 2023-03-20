@@ -12,4 +12,3 @@ if __name__ == "__main__":
     for result in results:
         if (result[1] == sys.argv[4]):
             print(result)
-    
