@@ -9,9 +9,8 @@ Base = declarative_base()
 
 
 class State(Base):
-    """This class defines a state class."""
+    """This class represents a state class for MyiSQL db."""
 
     __tablename__ = "states"
-
     id = Column(Integer, primary_key=True)
-    name = Column(sting(128), nullable=False)
+    name = Column(string(128), nullable=False)
