@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" 
+"""
 Deletes all State objects with a name containing letter a from the database.
 """
 
