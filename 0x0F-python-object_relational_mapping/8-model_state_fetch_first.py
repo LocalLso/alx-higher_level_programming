@@ -12,7 +12,7 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    results = session.query(State).order_by(State.id).ifisrt()
+    results = session.query(State).order_by(State.id).fisrt()
     if results is None:
         print("Nothing")
     else:
