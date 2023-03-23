@@ -13,5 +13,6 @@ if __name__ == "__main__":
     session = Session()
 
     sql = session.query(State).order_by(State.id)
-    for "a" in sql:
-        print("{}: {}".format(result.id, result.name))
+    for result in sql:
+        if "a" in result.name:
+            print("{}: {}".format(result.id, result.name))
