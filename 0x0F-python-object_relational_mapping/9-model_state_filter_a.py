@@ -12,7 +12,6 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    sql = session.query(State).order_by(State.id)
-    for result in sql:
+    for result in session.query(State).order_by(State.id):
         if "a" in result.name:
             print("{}: {}".format(result.id, result.name))
