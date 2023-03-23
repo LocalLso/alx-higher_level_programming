@@ -12,7 +12,6 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    sql = session.query(State).order_by(State.id) \
-                 .filter(State.name.like('%A%'))
-    for result in sql:
+    sql = session.query(State).order_by(State.id)
+    for "a" in sql:
         print("{}: {}".format(result.id, result.name))
